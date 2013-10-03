@@ -1,0 +1,659 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		002057B217EFE7F5001C2452 /* searchButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 002057B017EFE7F5001C2452 /* searchButton.png */; };
+		002057B317EFE7F5001C2452 /* searchButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 002057B117EFE7F5001C2452 /* searchButton@2x.png */; };
+		005E51F417D80DCB006D3DB5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 005E51F317D80DCB006D3DB5 /* Foundation.framework */; };
+		005E51F617D80DCB006D3DB5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 005E51F517D80DCB006D3DB5 /* CoreGraphics.framework */; };
+		005E51F817D80DCB006D3DB5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 005E51F717D80DCB006D3DB5 /* UIKit.framework */; };
+		005E51FE17D80DCB006D3DB5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 005E51FC17D80DCB006D3DB5 /* InfoPlist.strings */; };
+		005E520017D80DCB006D3DB5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 005E51FF17D80DCB006D3DB5 /* main.m */; };
+		005E520417D80DCB006D3DB5 /* NBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 005E520317D80DCB006D3DB5 /* NBAppDelegate.m */; };
+		005E520717D80DCB006D3DB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 005E520517D80DCB006D3DB5 /* Main.storyboard */; };
+		005E520A17D80DCB006D3DB5 /* NBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 005E520917D80DCB006D3DB5 /* NBViewController.m */; };
+		005E520C17D80DCB006D3DB5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 005E520B17D80DCB006D3DB5 /* Images.xcassets */; };
+		005E521317D80DCB006D3DB5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 005E521217D80DCB006D3DB5 /* XCTest.framework */; };
+		005E521417D80DCB006D3DB5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 005E51F317D80DCB006D3DB5 /* Foundation.framework */; };
+		005E521517D80DCB006D3DB5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 005E51F717D80DCB006D3DB5 /* UIKit.framework */; };
+		005E521D17D80DCB006D3DB5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 005E521B17D80DCB006D3DB5 /* InfoPlist.strings */; };
+		005E521F17D80DCB006D3DB5 /* myNextBusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 005E521E17D80DCB006D3DB5 /* myNextBusTests.m */; };
+		005E522B17D80E1F006D3DB5 /* NBDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 005E522A17D80E1F006D3DB5 /* NBDataManager.m */; };
+		005E91CA17EFC93B004A4874 /* NBMenuLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 005E91C917EFC93B004A4874 /* NBMenuLabel.m */; };
+		008FED0A17DC36B900198421 /* libFMDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 008FED0717DC369200198421 /* libFMDB.a */; };
+		009F44E417ECF7A8009CC776 /* gtfs.db in Resources */ = {isa = PBXBuildFile; fileRef = 009F44E317ECF7A8009CC776 /* gtfs.db */; };
+		009F44EA17ED2168009CC776 /* NBPredictionLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 009F44E917ED2168009CC776 /* NBPredictionLabel.m */; };
+		009F44EE17ED2FBC009CC776 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 009F44EC17ED2FBC009CC776 /* OpenSans-Bold.ttf */; };
+		009F44EF17ED2FBC009CC776 /* PTSans-Narrow.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 009F44ED17ED2FBC009CC776 /* PTSans-Narrow.ttf */; };
+		00AE3DFD17EC9A85006024B2 /* NBLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AE3DFC17EC9A85006024B2 /* NBLocationManager.m */; };
+		00AE3E0017EC9C66006024B2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00AE3DFF17EC9C66006024B2 /* CoreLocation.framework */; };
+		00CA422F17F0787E00A09911 /* NBSearchTextFieldOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CA422E17F0787E00A09911 /* NBSearchTextFieldOverlay.m */; };
+		00CA423417F0D4F900A09911 /* locationButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 00CA423017F0D4F900A09911 /* locationButton.png */; };
+		00CA423517F0D4F900A09911 /* locationButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00CA423117F0D4F900A09911 /* locationButton@2x.png */; };
+		00CA423617F0D4F900A09911 /* refreshButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 00CA423217F0D4F900A09911 /* refreshButton.png */; };
+		00CA423717F0D4F900A09911 /* refreshButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00CA423317F0D4F900A09911 /* refreshButton@2x.png */; };
+		00F1A6C617DA341500B5A83C /* NBArrowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F1A6C517DA341500B5A83C /* NBArrowView.m */; };
+		00F1A70D17DC33E100B5A83C /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 00F1A70C17DC33E100B5A83C /* libsqlite3.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		005E521617D80DCB006D3DB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 005E51E817D80DCB006D3DB5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 005E51EF17D80DCB006D3DB5;
+			remoteInfo = myNextBus;
+		};
+		008FED0417DC369200198421 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 008FECFF17DC369200198421 /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DD76FA10486AA7600D96B5E;
+			remoteInfo = fmdb;
+		};
+		008FED0617DC369200198421 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 008FECFF17DC369200198421 /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE4290EF12B42F870088BD94;
+			remoteInfo = FMDB;
+		};
+		008FED0817DC36B500198421 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 008FECFF17DC369200198421 /* fmdb.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EE4290EE12B42F870088BD94;
+			remoteInfo = FMDB;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		002057B017EFE7F5001C2452 /* searchButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = searchButton.png; sourceTree = "<group>"; };
+		002057B117EFE7F5001C2452 /* searchButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "searchButton@2x.png"; sourceTree = "<group>"; };
+		005E51F017D80DCB006D3DB5 /* myNextBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myNextBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		005E51F317D80DCB006D3DB5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		005E51F517D80DCB006D3DB5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		005E51F717D80DCB006D3DB5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		005E51FB17D80DCB006D3DB5 /* myNextBus-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "myNextBus-Info.plist"; sourceTree = "<group>"; };
+		005E51FD17D80DCB006D3DB5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		005E51FF17D80DCB006D3DB5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		005E520117D80DCB006D3DB5 /* myNextBus-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "myNextBus-Prefix.pch"; sourceTree = "<group>"; };
+		005E520217D80DCB006D3DB5 /* NBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NBAppDelegate.h; sourceTree = "<group>"; };
+		005E520317D80DCB006D3DB5 /* NBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NBAppDelegate.m; sourceTree = "<group>"; };
+		005E520617D80DCB006D3DB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		005E520817D80DCB006D3DB5 /* NBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NBViewController.h; sourceTree = "<group>"; };
+		005E520917D80DCB006D3DB5 /* NBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NBViewController.m; sourceTree = "<group>"; };
+		005E520B17D80DCB006D3DB5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		005E521117D80DCB006D3DB5 /* myNextBusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myNextBusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		005E521217D80DCB006D3DB5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		005E521A17D80DCB006D3DB5 /* myNextBusTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "myNextBusTests-Info.plist"; sourceTree = "<group>"; };
+		005E521C17D80DCB006D3DB5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		005E521E17D80DCB006D3DB5 /* myNextBusTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myNextBusTests.m; sourceTree = "<group>"; };
+		005E522917D80E1F006D3DB5 /* NBDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBDataManager.h; sourceTree = "<group>"; };
+		005E522A17D80E1F006D3DB5 /* NBDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBDataManager.m; sourceTree = "<group>"; };
+		005E91C817EFC93B004A4874 /* NBMenuLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBMenuLabel.h; sourceTree = "<group>"; };
+		005E91C917EFC93B004A4874 /* NBMenuLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBMenuLabel.m; sourceTree = "<group>"; };
+		008FECFF17DC369200198421 /* fmdb.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = fmdb.xcodeproj; path = "fmdb-master/fmdb.xcodeproj"; sourceTree = "<group>"; };
+		009F44DD17ECD70A009CC776 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		009F44E317ECF7A8009CC776 /* gtfs.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = gtfs.db; sourceTree = "<group>"; };
+		009F44E817ED2168009CC776 /* NBPredictionLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBPredictionLabel.h; sourceTree = "<group>"; };
+		009F44E917ED2168009CC776 /* NBPredictionLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBPredictionLabel.m; sourceTree = "<group>"; };
+		009F44EC17ED2FBC009CC776 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		009F44ED17ED2FBC009CC776 /* PTSans-Narrow.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PTSans-Narrow.ttf"; sourceTree = "<group>"; };
+		00AE3DFB17EC9A85006024B2 /* NBLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBLocationManager.h; sourceTree = "<group>"; };
+		00AE3DFC17EC9A85006024B2 /* NBLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBLocationManager.m; sourceTree = "<group>"; };
+		00AE3DFF17EC9C66006024B2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		00CA422D17F0787E00A09911 /* NBSearchTextFieldOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBSearchTextFieldOverlay.h; sourceTree = "<group>"; };
+		00CA422E17F0787E00A09911 /* NBSearchTextFieldOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBSearchTextFieldOverlay.m; sourceTree = "<group>"; };
+		00CA423017F0D4F900A09911 /* locationButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = locationButton.png; sourceTree = "<group>"; };
+		00CA423117F0D4F900A09911 /* locationButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "locationButton@2x.png"; sourceTree = "<group>"; };
+		00CA423217F0D4F900A09911 /* refreshButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refreshButton.png; sourceTree = "<group>"; };
+		00CA423317F0D4F900A09911 /* refreshButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "refreshButton@2x.png"; sourceTree = "<group>"; };
+		00F1A6C417DA341500B5A83C /* NBArrowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBArrowView.h; sourceTree = "<group>"; };
+		00F1A6C517DA341500B5A83C /* NBArrowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBArrowView.m; sourceTree = "<group>"; };
+		00F1A70C17DC33E100B5A83C /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		005E51ED17D80DCB006D3DB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00AE3E0017EC9C66006024B2 /* CoreLocation.framework in Frameworks */,
+				00F1A70D17DC33E100B5A83C /* libsqlite3.dylib in Frameworks */,
+				008FED0A17DC36B900198421 /* libFMDB.a in Frameworks */,
+				005E51F617D80DCB006D3DB5 /* CoreGraphics.framework in Frameworks */,
+				005E51F817D80DCB006D3DB5 /* UIKit.framework in Frameworks */,
+				005E51F417D80DCB006D3DB5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		005E520E17D80DCB006D3DB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				005E521317D80DCB006D3DB5 /* XCTest.framework in Frameworks */,
+				005E521517D80DCB006D3DB5 /* UIKit.framework in Frameworks */,
+				005E521417D80DCB006D3DB5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		005E51E717D80DCB006D3DB5 = {
+			isa = PBXGroup;
+			children = (
+				008FECFF17DC369200198421 /* fmdb.xcodeproj */,
+				005E51F917D80DCB006D3DB5 /* myNextBus */,
+				005E521817D80DCB006D3DB5 /* myNextBusTests */,
+				005E51F217D80DCB006D3DB5 /* Frameworks */,
+				005E51F117D80DCB006D3DB5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		005E51F117D80DCB006D3DB5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				005E51F017D80DCB006D3DB5 /* myNextBus.app */,
+				005E521117D80DCB006D3DB5 /* myNextBusTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		005E51F217D80DCB006D3DB5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00AE3DFF17EC9C66006024B2 /* CoreLocation.framework */,
+				00F1A70C17DC33E100B5A83C /* libsqlite3.dylib */,
+				005E51F317D80DCB006D3DB5 /* Foundation.framework */,
+				005E51F517D80DCB006D3DB5 /* CoreGraphics.framework */,
+				005E51F717D80DCB006D3DB5 /* UIKit.framework */,
+				005E521217D80DCB006D3DB5 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		005E51F917D80DCB006D3DB5 /* myNextBus */ = {
+			isa = PBXGroup;
+			children = (
+				009F44E217ECF7A8009CC776 /* Resources */,
+				00F1A6C317DA33BF00B5A83C /* Views */,
+				005E522817D80E06006D3DB5 /* Managers */,
+				005E520217D80DCB006D3DB5 /* NBAppDelegate.h */,
+				005E520317D80DCB006D3DB5 /* NBAppDelegate.m */,
+				005E520517D80DCB006D3DB5 /* Main.storyboard */,
+				005E520817D80DCB006D3DB5 /* NBViewController.h */,
+				005E520917D80DCB006D3DB5 /* NBViewController.m */,
+				005E520B17D80DCB006D3DB5 /* Images.xcassets */,
+				005E51FA17D80DCB006D3DB5 /* Supporting Files */,
+			);
+			path = myNextBus;
+			sourceTree = "<group>";
+		};
+		005E51FA17D80DCB006D3DB5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				005E51FB17D80DCB006D3DB5 /* myNextBus-Info.plist */,
+				005E51FC17D80DCB006D3DB5 /* InfoPlist.strings */,
+				005E51FF17D80DCB006D3DB5 /* main.m */,
+				005E520117D80DCB006D3DB5 /* myNextBus-Prefix.pch */,
+				009F44DD17ECD70A009CC776 /* Constants.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		005E521817D80DCB006D3DB5 /* myNextBusTests */ = {
+			isa = PBXGroup;
+			children = (
+				005E521E17D80DCB006D3DB5 /* myNextBusTests.m */,
+				005E521917D80DCB006D3DB5 /* Supporting Files */,
+			);
+			path = myNextBusTests;
+			sourceTree = "<group>";
+		};
+		005E521917D80DCB006D3DB5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				005E521A17D80DCB006D3DB5 /* myNextBusTests-Info.plist */,
+				005E521B17D80DCB006D3DB5 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		005E522817D80E06006D3DB5 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				005E522917D80E1F006D3DB5 /* NBDataManager.h */,
+				005E522A17D80E1F006D3DB5 /* NBDataManager.m */,
+				00AE3DFB17EC9A85006024B2 /* NBLocationManager.h */,
+				00AE3DFC17EC9A85006024B2 /* NBLocationManager.m */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		008FED0017DC369200198421 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				008FED0517DC369200198421 /* fmdb */,
+				008FED0717DC369200198421 /* libFMDB.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		009F44E217ECF7A8009CC776 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				009F44EB17ED2FBC009CC776 /* Fonts */,
+				009F44E317ECF7A8009CC776 /* gtfs.db */,
+				002057B017EFE7F5001C2452 /* searchButton.png */,
+				002057B117EFE7F5001C2452 /* searchButton@2x.png */,
+				00CA423017F0D4F900A09911 /* locationButton.png */,
+				00CA423117F0D4F900A09911 /* locationButton@2x.png */,
+				00CA423217F0D4F900A09911 /* refreshButton.png */,
+				00CA423317F0D4F900A09911 /* refreshButton@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		009F44EB17ED2FBC009CC776 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				009F44EC17ED2FBC009CC776 /* OpenSans-Bold.ttf */,
+				009F44ED17ED2FBC009CC776 /* PTSans-Narrow.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		00F1A6C317DA33BF00B5A83C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				00F1A6C417DA341500B5A83C /* NBArrowView.h */,
+				00F1A6C517DA341500B5A83C /* NBArrowView.m */,
+				009F44E817ED2168009CC776 /* NBPredictionLabel.h */,
+				009F44E917ED2168009CC776 /* NBPredictionLabel.m */,
+				005E91C817EFC93B004A4874 /* NBMenuLabel.h */,
+				005E91C917EFC93B004A4874 /* NBMenuLabel.m */,
+				00CA422D17F0787E00A09911 /* NBSearchTextFieldOverlay.h */,
+				00CA422E17F0787E00A09911 /* NBSearchTextFieldOverlay.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		005E51EF17D80DCB006D3DB5 /* myNextBus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 005E522217D80DCB006D3DB5 /* Build configuration list for PBXNativeTarget "myNextBus" */;
+			buildPhases = (
+				005E51EC17D80DCB006D3DB5 /* Sources */,
+				005E51ED17D80DCB006D3DB5 /* Frameworks */,
+				005E51EE17D80DCB006D3DB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				008FED0917DC36B500198421 /* PBXTargetDependency */,
+			);
+			name = myNextBus;
+			productName = myNextBus;
+			productReference = 005E51F017D80DCB006D3DB5 /* myNextBus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		005E521017D80DCB006D3DB5 /* myNextBusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 005E522517D80DCB006D3DB5 /* Build configuration list for PBXNativeTarget "myNextBusTests" */;
+			buildPhases = (
+				005E520D17D80DCB006D3DB5 /* Sources */,
+				005E520E17D80DCB006D3DB5 /* Frameworks */,
+				005E520F17D80DCB006D3DB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				005E521717D80DCB006D3DB5 /* PBXTargetDependency */,
+			);
+			name = myNextBusTests;
+			productName = myNextBusTests;
+			productReference = 005E521117D80DCB006D3DB5 /* myNextBusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		005E51E817D80DCB006D3DB5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = NB;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Jeffrey Deng";
+				TargetAttributes = {
+					005E521017D80DCB006D3DB5 = {
+						TestTargetID = 005E51EF17D80DCB006D3DB5;
+					};
+				};
+			};
+			buildConfigurationList = 005E51EB17D80DCB006D3DB5 /* Build configuration list for PBXProject "myNextBus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 005E51E717D80DCB006D3DB5;
+			productRefGroup = 005E51F117D80DCB006D3DB5 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 008FED0017DC369200198421 /* Products */;
+					ProjectRef = 008FECFF17DC369200198421 /* fmdb.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				005E51EF17D80DCB006D3DB5 /* myNextBus */,
+				005E521017D80DCB006D3DB5 /* myNextBusTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		008FED0517DC369200198421 /* fmdb */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = fmdb;
+			remoteRef = 008FED0417DC369200198421 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		008FED0717DC369200198421 /* libFMDB.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFMDB.a;
+			remoteRef = 008FED0617DC369200198421 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		005E51EE17D80DCB006D3DB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				005E520C17D80DCB006D3DB5 /* Images.xcassets in Resources */,
+				00CA423617F0D4F900A09911 /* refreshButton.png in Resources */,
+				005E51FE17D80DCB006D3DB5 /* InfoPlist.strings in Resources */,
+				002057B317EFE7F5001C2452 /* searchButton@2x.png in Resources */,
+				00CA423717F0D4F900A09911 /* refreshButton@2x.png in Resources */,
+				002057B217EFE7F5001C2452 /* searchButton.png in Resources */,
+				00CA423417F0D4F900A09911 /* locationButton.png in Resources */,
+				005E520717D80DCB006D3DB5 /* Main.storyboard in Resources */,
+				009F44EE17ED2FBC009CC776 /* OpenSans-Bold.ttf in Resources */,
+				00CA423517F0D4F900A09911 /* locationButton@2x.png in Resources */,
+				009F44EF17ED2FBC009CC776 /* PTSans-Narrow.ttf in Resources */,
+				009F44E417ECF7A8009CC776 /* gtfs.db in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		005E520F17D80DCB006D3DB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				005E521D17D80DCB006D3DB5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		005E51EC17D80DCB006D3DB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				009F44EA17ED2168009CC776 /* NBPredictionLabel.m in Sources */,
+				00AE3DFD17EC9A85006024B2 /* NBLocationManager.m in Sources */,
+				005E520A17D80DCB006D3DB5 /* NBViewController.m in Sources */,
+				005E91CA17EFC93B004A4874 /* NBMenuLabel.m in Sources */,
+				005E520417D80DCB006D3DB5 /* NBAppDelegate.m in Sources */,
+				005E520017D80DCB006D3DB5 /* main.m in Sources */,
+				00F1A6C617DA341500B5A83C /* NBArrowView.m in Sources */,
+				005E522B17D80E1F006D3DB5 /* NBDataManager.m in Sources */,
+				00CA422F17F0787E00A09911 /* NBSearchTextFieldOverlay.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		005E520D17D80DCB006D3DB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				005E521F17D80DCB006D3DB5 /* myNextBusTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		005E521717D80DCB006D3DB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 005E51EF17D80DCB006D3DB5 /* myNextBus */;
+			targetProxy = 005E521617D80DCB006D3DB5 /* PBXContainerItemProxy */;
+		};
+		008FED0917DC36B500198421 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FMDB;
+			targetProxy = 008FED0817DC36B500198421 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		005E51FC17D80DCB006D3DB5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				005E51FD17D80DCB006D3DB5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		005E520517D80DCB006D3DB5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				005E520617D80DCB006D3DB5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		005E521B17D80DCB006D3DB5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				005E521C17D80DCB006D3DB5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		005E522017D80DCB006D3DB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		005E522117D80DCB006D3DB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		005E522317D80DCB006D3DB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/**";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "myNextBus/myNextBus-Prefix.pch";
+				HEADER_SEARCH_PATHS = "${SRCROOT}/**";
+				INFOPLIST_FILE = "myNextBus/myNextBus-Info.plist";
+				LIBRARY_SEARCH_PATHS = "${SRCROOT}/**";
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		005E522417D80DCB006D3DB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/**";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "myNextBus/myNextBus-Prefix.pch";
+				HEADER_SEARCH_PATHS = "${SRCROOT}/**";
+				INFOPLIST_FILE = "myNextBus/myNextBus-Info.plist";
+				LIBRARY_SEARCH_PATHS = "${SRCROOT}/**";
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		005E522617D80DCB006D3DB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/myNextBus.app/myNextBus";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP3.app/Contents/Developer/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "myNextBus/myNextBus-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "myNextBusTests/myNextBusTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		005E522717D80DCB006D3DB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/myNextBus.app/myNextBus";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP3.app/Contents/Developer/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "myNextBus/myNextBus-Prefix.pch";
+				INFOPLIST_FILE = "myNextBusTests/myNextBusTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		005E51EB17D80DCB006D3DB5 /* Build configuration list for PBXProject "myNextBus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				005E522017D80DCB006D3DB5 /* Debug */,
+				005E522117D80DCB006D3DB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		005E522217D80DCB006D3DB5 /* Build configuration list for PBXNativeTarget "myNextBus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				005E522317D80DCB006D3DB5 /* Debug */,
+				005E522417D80DCB006D3DB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		005E522517D80DCB006D3DB5 /* Build configuration list for PBXNativeTarget "myNextBusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				005E522617D80DCB006D3DB5 /* Debug */,
+				005E522717D80DCB006D3DB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 005E51E817D80DCB006D3DB5 /* Project object */;
+}

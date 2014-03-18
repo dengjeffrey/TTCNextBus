@@ -10,6 +10,8 @@
 
 @interface NBSearchTextFieldOverlay : UIView
 
+@property (strong,nonatomic) UITextField *searchTextField;
+
 - (id)initWithDelegate:(NSObject <UITextFieldDelegate> *) delegate AndAnimation:(BOOL) animation;
 - (void)animateExit;
 

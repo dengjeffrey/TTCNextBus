@@ -12,6 +12,7 @@
 
 @end
 
+
 @implementation NBPredictionLabel
 
 @synthesize directionLabel;

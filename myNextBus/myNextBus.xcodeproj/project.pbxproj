@@ -22,7 +22,6 @@
 		005E521417D80DCB006D3DB5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 005E51F317D80DCB006D3DB5 /* Foundation.framework */; };
 		005E521517D80DCB006D3DB5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 005E51F717D80DCB006D3DB5 /* UIKit.framework */; };
 		005E521D17D80DCB006D3DB5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 005E521B17D80DCB006D3DB5 /* InfoPlist.strings */; };
-		005E521F17D80DCB006D3DB5 /* myNextBusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 005E521E17D80DCB006D3DB5 /* myNextBusTests.m */; };
 		005E522B17D80E1F006D3DB5 /* NBDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 005E522A17D80E1F006D3DB5 /* NBDataManager.m */; };
 		005E91CA17EFC93B004A4874 /* NBMenuLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 005E91C917EFC93B004A4874 /* NBMenuLabel.m */; };
 		008FED0A17DC36B900198421 /* libFMDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 008FED0717DC369200198421 /* libFMDB.a */; };
@@ -37,6 +36,7 @@
 		00CA423517F0D4F900A09911 /* locationButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00CA423117F0D4F900A09911 /* locationButton@2x.png */; };
 		00CA423617F0D4F900A09911 /* refreshButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 00CA423217F0D4F900A09911 /* refreshButton.png */; };
 		00CA423717F0D4F900A09911 /* refreshButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00CA423317F0D4F900A09911 /* refreshButton@2x.png */; };
+		00EA3BAD18CE5B10001BC617 /* NBTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EA3BAC18CE5B10001BC617 /* NBTestCase.m */; };
 		00F1A6C617DA341500B5A83C /* NBArrowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F1A6C517DA341500B5A83C /* NBArrowView.m */; };
 		00F1A70D17DC33E100B5A83C /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 00F1A70C17DC33E100B5A83C /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
@@ -93,7 +93,6 @@
 		005E521217D80DCB006D3DB5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		005E521A17D80DCB006D3DB5 /* myNextBusTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "myNextBusTests-Info.plist"; sourceTree = "<group>"; };
 		005E521C17D80DCB006D3DB5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		005E521E17D80DCB006D3DB5 /* myNextBusTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myNextBusTests.m; sourceTree = "<group>"; };
 		005E522917D80E1F006D3DB5 /* NBDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBDataManager.h; sourceTree = "<group>"; };
 		005E522A17D80E1F006D3DB5 /* NBDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBDataManager.m; sourceTree = "<group>"; };
 		005E91C817EFC93B004A4874 /* NBMenuLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBMenuLabel.h; sourceTree = "<group>"; };
@@ -114,6 +113,8 @@
 		00CA423117F0D4F900A09911 /* locationButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "locationButton@2x.png"; sourceTree = "<group>"; };
 		00CA423217F0D4F900A09911 /* refreshButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refreshButton.png; sourceTree = "<group>"; };
 		00CA423317F0D4F900A09911 /* refreshButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "refreshButton@2x.png"; sourceTree = "<group>"; };
+		00EA3BAB18CE5B10001BC617 /* NBTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBTestCase.h; sourceTree = "<group>"; };
+		00EA3BAC18CE5B10001BC617 /* NBTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBTestCase.m; sourceTree = "<group>"; };
 		00F1A6C417DA341500B5A83C /* NBArrowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBArrowView.h; sourceTree = "<group>"; };
 		00F1A6C517DA341500B5A83C /* NBArrowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBArrowView.m; sourceTree = "<group>"; };
 		00F1A70C17DC33E100B5A83C /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
@@ -211,8 +212,9 @@
 		005E521817D80DCB006D3DB5 /* myNextBusTests */ = {
 			isa = PBXGroup;
 			children = (
-				005E521E17D80DCB006D3DB5 /* myNextBusTests.m */,
 				005E521917D80DCB006D3DB5 /* Supporting Files */,
+				00EA3BAB18CE5B10001BC617 /* NBTestCase.h */,
+				00EA3BAC18CE5B10001BC617 /* NBTestCase.m */,
 			);
 			path = myNextBusTests;
 			sourceTree = "<group>";
@@ -432,7 +434,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				005E521F17D80DCB006D3DB5 /* myNextBusTests.m in Sources */,
+				00EA3BAD18CE5B10001BC617 /* NBTestCase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

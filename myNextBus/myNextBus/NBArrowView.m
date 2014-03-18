@@ -17,6 +17,7 @@
 
 @end
 
+
 @implementation NBArrowView
 
 @synthesize arrowColour;
@@ -34,7 +35,6 @@
     }
     return nil;
 }
-
 
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
@@ -62,16 +62,6 @@
     
     // Fill path
     CGContextFillPath(context);
-    
-    /*
-    [self.layer setShadowPath:arrowPath];
-    [self.layer setShouldRasterize:YES];
-    [self.layer setShadowOffset:CGSizeMake(0, 1.5)];
-    [self.layer setShadowColor:[[UIColor grayColor] CGColor]];
-    [self.layer setShadowOpacity:1];
-     */
-    
-
 }
 
 - (void)setViewOrientation:(ViewOrientation) orientation {

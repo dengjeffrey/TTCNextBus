@@ -22,8 +22,8 @@
 // Databases
 @property (strong, nonatomic) FMDatabase *database;
 
-
 @end
+
 
 @implementation NBDataManager
 
@@ -81,7 +81,8 @@ static NBDataManager *sharedManager;
     NSString *agentString = @"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_6; en-us) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/3.2.1 Safari/525.27.1";
     
     // Prediction URL from NextBus: http://www.nextbus.com/xmlFeedDocs/NextBusXMLFeed.pdf
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://webservices.nextbus.com/service/publicXMLFeed?command=predictions&a=ttc&stopId=%@",stopIDString]];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://webservices.nextbus.com/service/publicXMLFeed?command=predictions&a=ttc&stopId=%@",
+                                       stopIDString]];
     
     NSMutableURLRequest *urlReq = [NSMutableURLRequest requestWithURL:url];
     [urlReq setValue:agentString forHTTPHeaderField:@"User-Agent"];
@@ -92,8 +93,6 @@ static NBDataManager *sharedManager;
     xmlParser = [[NSXMLParser alloc] initWithData:data];
     [xmlParser setDelegate:self];
     [xmlParser parse];
-    
-    NSLog(@"Dictionary Format: %@", parsedItems);
     
     return parsedItems;
 }
@@ -122,15 +121,13 @@ static NBDataManager *sharedManager;
     do {
         double lat = [results doubleForColumn:@"stop_lat"];
         double lon = [results doubleForColumn:@"stop_lon"];
-        NSLog(@"Searched Location: %f,%f",lat, lon);
         
         // a^2 + b^2 = c^2
         double aSquared = pow(lat - location.latitude, 2);
         double bSquared = pow(lon - location.longitude, 2);
         double distance = pow(aSquared + bSquared, 0.5);
         
-        NSLog(@"Distance Location: %f", distance);
-        
+        // Find shortest distance
         if (distance < shortestDistanceBetweenPoints) {
             shortestDistanceBetweenPoints = distance;
             closestStopId = [results stringForColumn:@"stop_id"];
@@ -163,9 +160,6 @@ static NBDataManager *sharedManager;
     }else if ([elementName isEqualToString:@"direction"]){
         [parsedItems setObject:[attributeDict objectForKey:@"title"] forKey:@"title"];
     }
-    
-    NSLog(@"Element Name:%@",elementName);
-    NSLog(@"Dictionary: %@",attributeDict);
 }
 
 - (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string {}

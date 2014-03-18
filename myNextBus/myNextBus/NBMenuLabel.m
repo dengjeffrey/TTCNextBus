@@ -17,6 +17,7 @@
 
 @end
 
+
 @implementation NBMenuLabel
 
 @synthesize searchPrompt;

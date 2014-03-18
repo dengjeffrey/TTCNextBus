@@ -11,11 +11,6 @@
 @interface NBLocationManager()
 
 @property (strong,nonatomic) NSArray *currentLocations;
-
-@end
-
-@interface NBLocationManager()
-
 @property (strong,nonatomic) CLLocationManager *locationManager;
 
 @end
@@ -51,7 +46,6 @@ static NBLocationManager *sharedManager;
     }
     
     return nil;
-    
 }
 
 #pragma mark - Fetching location data

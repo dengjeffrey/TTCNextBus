@@ -20,7 +20,6 @@
 @property (strong,nonatomic) NBSearchTextFieldOverlay *searchOverlayView;
 @property (strong,nonatomic) NBPredictionLabel *predictionLabel;
 @property (strong,nonatomic) NBMenuLabel *searchTextLabel;
-@property (assign,nonatomic) int currentStopID;
 
 @end
 
@@ -79,7 +78,7 @@
         [redArrow setViewOrientation:Right];
         [blueArrow setViewOrientation:Left];
     }else {
-        NSLog(@"ERROR OCCURED, unable to find direction of stop");
+        NSLog(@"No stop was found");
         [redArrow setViewOrientation:Left];
         [blueArrow setViewOrientation:Right];
     }
@@ -377,8 +376,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-
-
 
 @end

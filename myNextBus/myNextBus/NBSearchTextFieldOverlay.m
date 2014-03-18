@@ -10,11 +10,11 @@
 
 @interface NBSearchTextFieldOverlay ()
 
-@property (strong,nonatomic) UITextField *searchTextField;
 @property (strong,nonatomic) UIView *blackOverlay;
 @property (strong,nonatomic) UIButton *searchButton;
 
 @end
+
 
 @implementation NBSearchTextFieldOverlay
 
